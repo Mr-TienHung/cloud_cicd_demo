@@ -1,10 +1,368 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Cloud CI/CD Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud CI/CD Demo - Phụ Kiện Laptop & Thiết Lập Setup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Cloud CI/CD Demo</h1>
-    <p>Website triển khai tự động bằng GitHub Actions</p>
+<body class="dark-mode">
+
+    <div class="utility-bar">
+        <div class="datetime-container">
+            📅 <span id="current-datetime">Đang tải thời gian...</span>
+        </div>
+        <button id="theme-toggle-btn" onclick="toggleTheme()">☀️ Chế độ Sáng</button>
+    </div>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>Cloud CI/CD Demo</h1>
+            <p class="subtitle">Website triển khai tự động bằng GitHub Actions</p>
+        </header>
+
+        <section class="card-section">
+            <h2 class="section-title">🛠️ Danh Sách Chi Tiết Phụ Kiện Setup</h2>
+            
+            <div class="grid-container">
+                <div class="accessory-card">
+                    <h3>💼 Túi đựng laptop / balo chống sốc</h3>
+                    <p>Bảo vệ máy khỏi va đập, mưa, bụi. Nên chọn loại có ngăn riêng cho laptop, chống nước, có mút đệm chống sốc. Nếu di chuyển nhiều &rarr; nên dùng balo laptop, đeo dễ hơn, tránh mỏi vai.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🎒 Túi chống sốc phụ kiện</h3>
+                    <p>Chứa chuột, sạc, tai nghe, cáp gọn gàng. Lớp chống sốc, chống va đập khi di chuyển. Tiện mang theo đi học, đi làm, du lịch.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖥️ Màn hình rời</h3>
+                    <p>Tăng không gian hiển thị, dễ mở nhiều cửa sổ. Hình ảnh sắc nét, hạn chế mỏi mắt so với màn laptop. Học online, code, thiết kế đều thoải mái hơn.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📷 Webcam rời</h3>
+                    <p>Độ phân giải cao (Full HD/4K), sáng rõ hơn webcam laptop. Tích hợp micro lọc tạp âm, phù hợp học/họp/stream. Góc quay rộng, điều chỉnh linh hoạt.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖱️ Chuột không dây</h3>
+                    <p>Nhanh hơn nhiều so với trackpad. Chọn loại nhỏ gọn, dễ mang theo. Ưu tiên chuột Bluetooth (không cần đầu thu USB).</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>⌨️ Bàn phím rời</h3>
+                    <p>Gõ thoải mái, tránh mòn phím laptop. Hợp cho lập trình, nhập liệu, chơi game. Có thể chọn cơ (nhanh, gaming) hoặc membrane (êm, rẻ).</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🎮 Tay cầm (Controller)</h3>
+                    <p>Trải nghiệm game mượt hơn bàn phím. Hỗ trợ nhiều loại game (PC, mobile, giả lập). Cầm chắc tay, thao tác nhanh.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖲️ Bảng vẽ điện tử (Graphic Tablet)</h3>
+                    <p>Dùng cho designer, vẽ tay, chỉnh ảnh. Bút cảm ứng chính xác, hỗ trợ lực nhấn. Tương thích nhiều phần mềm thiết kế.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>✏️ Bút stylus cho laptop cảm ứng</h3>
+                    <p>Ghi chú trực tiếp trên màn hình. Vẽ phác thảo, học online. Độ chính xác cao, thay thế viết tay.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖨️ Máy in</h3>
+                    <p>In bài tập, tài liệu học/làm. Hỗ trợ in màu, scan, photocopy. Tiện lợi, tiết kiệm thời gian.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📠 Máy hủy tài liệu</h3>
+                    <p>Nghiền nhỏ giấy chứa dữ liệu quan trọng. Bảo mật thông tin cá nhân. Gọn gàng, xử lý rác nhanh.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖱️ Lót chuột (Mousepad cỡ lớn)</h3>
+                    <p>Kê vừa chuột + bàn phím, gọn gàng. Chuột di chính xác, ổn định hơn. Chất liệu êm, chống trượt, dễ vệ sinh.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>❄️ Đế tản nhiệt laptop</h3>
+                    <p>Quạt giúp laptop mát hơn. Giảm lag, treo máy do quá nhiệt. Thiết kế nâng máy, gõ phím thoải mái.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🧴 Gel kê tay (Wrist Rest)</h3>
+                    <p>Gõ phím/di chuột lâu không mỏi. Memory foam êm, nâng cổ tay chuẩn. Giảm nguy cơ ống cổ tay.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🎤 Bộ thu âm (Micro setup)</h3>
+                    <p>Micro rời: âm trong, lọc tạp tốt. Arm: giữ micro cố định, linh hoạt. Pop Filter: lọc tiếng "p, s". Voice changer: đổi giọng khi stream.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🎧 Tai nghe</h3>
+                    <p>Nhỏ gọn, tiện họp/học/giải trí. Nên chọn loại chống ồn nếu nơi công cộng.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖼️ Khung treo tai nghe</h3>
+                    <p>Giữ tai nghe cố định, tránh rối dây. Bàn gọn gàng, tăng tuổi thọ. Một số có sạc USB.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔊 Loa Bluetooth</h3>
+                    <p>Âm thanh sống động hơn loa laptop. Kết nối không dây, dễ mang đi. Dùng cho cả điện thoại, tablet.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔉 Soundbar để bàn</h3>
+                    <p>Âm rộng, mạnh hơn loa laptop. Gọn, đặt ngay dưới màn hình. Học online, xem phim, nghe nhạc.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📱 Dây chuyển đổi (Adapter)</h3>
+                    <p>Ví dụ: USB-C &rarr; HDMI, VGA, LAN… Máy mỏng như MacBook thường cần.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔌 Bộ sạc laptop (Adapter)</h3>
+                    <p>Nên mang theo sạc chính hãng. Có thể mua thêm 1 bộ để văn phòng.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔌 Ổ cắm điện / ổ chia đa năng</h3>
+                    <p>Nhiều nơi thiếu ổ &rarr; có ổ chia tiện hơn. Loại có cổng USB rất phổ biến.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔋 Đế sạc không dây</h3>
+                    <p>Đặt điện thoại lên là sạc. Bàn gọn, hiện đại. Có loại sạc được cả tai nghe, đồng hồ.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔋 Pin dự phòng</h3>
+                    <p>Nếu laptop hỗ trợ USB-C PD &rarr; dùng pin 65W+. Nếu không &rarr; pin cho điện thoại vẫn đủ khi đi lại.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>💽 Ổ cứng / USB dự phòng</h3>
+                    <p>Nếu làm việc với file nặng nên có SSD ngoài/USB. Tránh mất dữ liệu khi hỏng máy.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🧽 Bộ vệ sinh laptop mini</h3>
+                    <p>Gồm khăn microfiber, dung dịch, chổi, keo dính bụi. Giữ máy sạch sẽ, nhất là khi di chuyển.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🧹 Robot hút bụi mini để bàn</h3>
+                    <p>Hút vụn giấy, bánh, bụi nhỏ. Nhỏ gọn, dễ dùng. Bàn luôn sạch sẽ.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>☔ Dù nhỏ / túi nilon chống nước</h3>
+                    <p>Mùa mưa tránh nước vào balo/laptop.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🛡️ Phần mềm cần thiết</h3>
+                    <p>Bộ Office (Word, Excel, PowerPoint). Trình duyệt phụ (Chrome, Firefox…). Phần mềm diệt virus/bảo mật. Lưu trữ đám mây (Drive, OneDrive…).</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>💡 Đèn LED/đèn để bàn</h3>
+                    <p>Ánh sáng đều, hạn chế mỏi mắt. Điều chỉnh độ sáng, màu (trắng/vàng). Nhỏ gọn, tiết kiệm điện.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🔆 Đèn RGB trang trí</h3>
+                    <p>Hiệu ứng ánh sáng đa màu. Tăng tính thẩm mỹ, tạo hứng khởi. Có loại đồng bộ với nhạc/game.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📡 Bộ phát WiFi Mesh</h3>
+                    <p>Xóa điểm chết WiFi, mạng ổn định. Giảm lag khi học/remote/play game. Hỗ trợ nhiều thiết bị cùng lúc.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>⌚ Đồng hồ thông minh</h3>
+                    <p>Theo dõi sức khỏe, nhắc vận động. Thông báo tin nhắn/cuộc gọi trên cổ tay. Một số hỗ trợ điều khiển nhạc, đo stress.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📱 Giá đỡ điện thoại / tablet</h3>
+                    <p>Giữ thiết bị cố định khi học/họp. Điều chỉnh góc nhìn, hạn chế mỏi cổ. Nhỏ gọn, chắc chắn.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖥️ Giá treo màn hình (Monitor arm)</h3>
+                    <p>Tiết kiệm diện tích bàn, gọn gàng. Điều chỉnh độ cao/góc linh hoạt. Dễ xoay ngang/dọc.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>☕ Bình giữ nhiệt</h3>
+                    <p>Giữ nước nóng/lạnh lâu. Hạn chế đi lại khi làm việc. Tăng tập trung.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🌱 Cây cảnh mini để bàn</h3>
+                    <p>Tạo điểm xanh, giảm stress. Một số loại hút bụi, lọc không khí. Nhỏ gọn, dễ chăm sóc.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🕰️ Đồng hồ để bàn thông minh</h3>
+                    <p>Hiển thị giờ, báo thức, thời tiết. Có loa Bluetooth, sạc không dây. Gọn, hiện đại, trang trí bàn.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🪑 Bàn nâng hạ thông minh</h3>
+                    <p>Chuyển ngồi/đứng linh hoạt. Giảm đau lưng, cổ. Tăng năng suất, tốt cho máu huyết.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🪑 Ghế công thái học / gaming</h3>
+                    <p>Hỗ trợ lưng, cổ, tay, tư thế chuẩn. Điều chỉnh linh hoạt (ngả, cao, kê tay). Êm, thoáng khí, tập trung hơn.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🧘 Ghế massage mini</h3>
+                    <p>Giảm mỏi cổ, vai, lưng khi ngồi lâu. Nhỏ gọn, dễ gắn ghế. Tăng sự thoải mái.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🪞 Film chống ánh sáng xanh / chống lóa</h3>
+                    <p>Giảm ánh sáng xanh, mỏi mắt. Hạn chế chói dưới ánh sáng mạnh. Giữ màn hình sạch, chống trầy.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🪟 Miếng dán cách âm (foam panels)</h3>
+                    <p>Hấp thụ âm, giảm vang khi call/thu âm. Cải thiện chất lượng stream/podcast. Trang trí đẹp mắt.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🖼️ Nanoleaf / Panel LED tường</h3>
+                    <p>Ánh sáng đa sắc, tùy chỉnh mood. Điểm nhấn setup học/làm. Điều khiển qua app/giọng nói.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🎛️ Bảng điều khiển đèn RGB</h3>
+                    <p>Điều chỉnh màu sắc, độ sáng. Hỗ trợ app/giọng nói. Tạo atmosphere theo mood/game.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📺 Máy chiếu mini</h3>
+                    <p>Trình chiếu học tập, xem phim. Nhỏ gọn, dễ mang. Kết nối laptop, điện thoại.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🌬️ Máy lọc không khí mini để bàn</h3>
+                    <p>Lọc bụi, mùi, vi khuẩn. Nhỏ gọn, đặt trên bàn. Giúp tập trung, dễ thở.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🧯 Ổn áp mini (Voltage stabilizer)</h3>
+                    <p>Ổn định dòng điện, chống sốc. Bảo vệ PC, laptop, màn hình. Cần thiết nơi điện áp không ổn định.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🪫 UPS (Bộ lưu điện)</h3>
+                    <p>Cấp điện tạm thời khi mất điện. Ngăn hỏng linh kiện, mất dữ liệu. Giữ kết nối ổn định khi học/thi online.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🧊 Tủ lạnh mini để bàn</h3>
+                    <p>Bảo quản nước uống, đồ ăn nhẹ. Nhiệt độ ổn định, tiết kiệm thời gian. Nhỏ gọn, tiện lợi.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🛋️ Sofa bed mini cạnh setup</h3>
+                    <p>Nằm nghỉ ngắn sau giờ học/làm. Gấp gọn, tiết kiệm diện tích. Vừa thư giãn, vừa tiếp khách.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>🛠️ Máy in 3D</h3>
+                    <p>In mô hình, linh kiện, đồ trang trí. Hỗ trợ sáng tạo, nghiên cứu, DIY. Phù hợp designer, kỹ thuật, maker.</p>
+                </div>
+
+                <div class="accessory-card">
+                    <h3>📷 Camera an ninh mini</h3>
+                    <p>Giám sát không gian học/làm. Phát hiện chuyển động, báo điện thoại. Nhỏ gọn, dễ giấu.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-section">
+            <h2 class="section-title">💡 Phụ Kiện Phần Mềm Nên Cài Đặt</h2>
+            <div class="table-responsive">
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Tên phần mềm</th>
+                            <th>Tác dụng / Công dụng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>OBS Studio</strong></td>
+                            <td>Ghi và stream game hiệu năng cao</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MSI Afterburner</strong></td>
+                            <td>Theo dõi nhiệt độ, hiệu năng phần cứng GPU trong thời gian thực</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Steam / Epic / Xbox App</strong></td>
+                            <td>Quản lý, phân phối và cài đặt trò chơi điện tử</td>
+                        </tr>
+                        <tr>
+                            <td><strong>DaVinci Resolve / CapCut PC</strong></td>
+                            <td>Dựng và biên tập video/clip ngắn chuyên nghiệp</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Visual Studio Code / XAMPP</strong></td>
+                            <td>Môi trường lập trình soạn thảo code và máy chủ giả lập web</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Cập nhật Ngày giờ thực tế liên tục
+        function updateDateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit' 
+            };
+            document.getElementById('current-datetime').textContent = now.toLocaleDateString('vi-VN', options);
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+
+        // Chuyển đổi giao diện sáng tối
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('theme-toggle-btn');
+            
+            if(body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                btn.textContent = "🌙 Chế độ Tối";
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                btn.textContent = "☀️ Chế độ Sáng";
+            }
+        }
+    </script>
 </body>
 </html>
